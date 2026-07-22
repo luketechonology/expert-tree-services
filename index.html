@@ -13,8 +13,8 @@
   <!-- Stylesheets -->
   <link rel="stylesheet" href="./assets/variables.css">
   <link rel="stylesheet" href="./assets/base.css">
-  <link rel="stylesheet" href="./assets/components.css?v=20260720-simple-logo">
-  <link rel="stylesheet" href="./assets/sections.css?v=20260721-local-proof">
+  <link rel="stylesheet" href="./assets/components.css?v=20260721-logo-redesign">
+  <link rel="stylesheet" href="./assets/sections.css?v=20260721-hero-cleanup">
   <link rel="stylesheet" href="./assets/animations.css">
   <link rel="stylesheet" href="./assets/chatbot.css?v=20260721-chat-label">
 
@@ -49,8 +49,8 @@
     <div class="container">
       <a href="#hero" class="nav-logo" aria-label="Expert Tree Services — Home">
         <svg class="nav-logo-icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <circle class="logo-disc" cx="32" cy="32" r="29"></circle>
-          <path class="logo-tree" d="M32 10c-4.4 0-8.2 2.5-10.1 6.2-5.4-.6-10.2 3.7-10.2 9.2 0 4.9 3.7 8.9 8.5 9.4.9 4.4 4.8 7.7 9.5 7.7h.3v8.2h-6v4h16v-4h-6v-8.2h.3c4.7 0 8.6-3.3 9.5-7.7 4.8-.5 8.5-4.5 8.5-9.4 0-5.5-4.8-9.8-10.2-9.2C40.2 12.5 36.4 10 32 10Z"></path>
+          <path class="logo-canopy-mark" d="M32 4C18 9 9 20 9 34c0 15 10 25 23 27 13-2 23-12 23-27C55 20 46 9 32 4Z"></path>
+          <path class="logo-branch-mark" d="M32 52V18M32 31 22 22M32 39l12-12M32 46l-9-8"></path>
         </svg>
         <span class="nav-logo-text">
           <strong>Expert</strong><small>Tree Services</small>
@@ -67,9 +67,8 @@
         <a href="#gallery" class="nav-link">Gallery</a>
         <a href="#reviews" class="nav-link">Reviews</a>
         <a href="#service-area" class="nav-link">Service Area</a>
-        <a href="tel:+13024757594" class="nav-phone" aria-label="Call Expert Tree Services at (302) 475-7594">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-          <span><small>Call now</small><strong>(302) 475-7594</strong></span>
+        <a href="tel:+13024757594" class="btn btn-primary nav-phone" aria-label="Call Expert Tree Services at (302) 475-7594">
+          <span>Call (302) 475-7594</span>
         </a>
         <a href="#estimate" class="btn btn-primary nav-cta"><span>Free Estimate</span></a>
       </div>
@@ -92,20 +91,12 @@
       <p class="hero-subtitle">
         From dangerous and dead trees to storm damage, our crews protect your property with expert planning and careful removal.
       </p>
-      <div class="hero-actions">
-        <a href="#estimate" class="btn btn-primary"><span>Get a Free Estimate</span></a>
-        <a href="tel:+13024757594" class="btn btn-secondary"><span>Call an Arborist</span></a>
-      </div>
       <div class="hero-proof" aria-label="Company credentials">
         <span>Safety-Focused Planning</span>
         <span>Property Protection</span>
         <span>Detailed Hazard Assessments</span>
         <span>24/7 Emergency Service</span>
       </div>
-      <a href="tel:+13024757594" class="hero-phone">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-        Main Office: (302) 475-7594
-      </a>
     </div>
 
     <div class="hero-scroll-indicator" aria-hidden="true">
@@ -457,7 +448,7 @@
               <div class="form-row">
                 <div class="form-group">
                   <label class="form-label" for="form-name">Full Name *</label>
-                  <input class="form-input" type="text" id="form-name" name="name" placeholder="John Doe" required="">
+                  <input class="form-input" type="text" id="form-name" name="name" placeholder="Robby Smith" required="">
                 </div>
                 <div class="form-group">
                   <label class="form-label" for="form-email">Email Address *</label>
@@ -523,8 +514,8 @@
         <div class="footer-brand">
           <a href="#hero" class="nav-logo" aria-label="Expert Tree Services — Home">
             <svg class="nav-logo-icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <circle class="logo-disc" cx="32" cy="32" r="29"></circle>
-              <path class="logo-tree" d="M32 10c-4.4 0-8.2 2.5-10.1 6.2-5.4-.6-10.2 3.7-10.2 9.2 0 4.9 3.7 8.9 8.5 9.4.9 4.4 4.8 7.7 9.5 7.7h.3v8.2h-6v4h16v-4h-6v-8.2h.3c4.7 0 8.6-3.3 9.5-7.7 4.8-.5 8.5-4.5 8.5-9.4 0-5.5-4.8-9.8-10.2-9.2C40.2 12.5 36.4 10 32 10Z"></path>
+              <path class="logo-canopy-mark" d="M32 4C18 9 9 20 9 34c0 15 10 25 23 27 13-2 23-12 23-27C55 20 46 9 32 4Z"></path>
+              <path class="logo-branch-mark" d="M32 52V18M32 31 22 22M32 39l12-12M32 46l-9-8"></path>
             </svg>
             <span class="nav-logo-text">
               <strong>Expert</strong><small>Tree Services</small>
@@ -566,7 +557,7 @@
           <div class="footer-links">
             <a href="tel:+13024757594">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-              Main Office: (302) 475-7594
+              (302) 475-7594
             </a>
             <a href="tel:+13022786387">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>

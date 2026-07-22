@@ -86,39 +86,8 @@
   color: rgba(255, 255, 255, 0.85);
   max-width: 55ch;
   margin-inline: auto;
-  margin-bottom: var(--sp-2xl);
+  margin-bottom: var(--sp-xl);
   line-height: var(--lh-loose);
-}
-
-.hero-actions {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--sp-md);
-  flex-wrap: wrap;
-}
-
-.hero-phone {
-  display: flex;
-  align-items: center;
-  gap: var(--sp-sm);
-  color: var(--white);
-  font-family: var(--ff-heading);
-  font-size: var(--fs-body);
-  font-weight: var(--fw-semi);
-  text-decoration: none;
-  margin-top: var(--sp-xl);
-  transition: color var(--dur-fast) var(--ease-out);
-}
-
-.hero-phone:hover {
-  color: var(--leaf-light);
-}
-
-.hero-phone svg {
-  width: 20px;
-  height: 20px;
-  animation: pulse-ring 2s ease-out infinite;
 }
 
 .hero-proof {
@@ -126,7 +95,7 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: var(--sp-sm) var(--sp-lg);
-  margin-top: var(--sp-xl);
+  margin-top: 0;
   color: rgba(255, 255, 255, 0.9);
   font-size: var(--fs-xs);
   font-weight: var(--fw-semi);
@@ -233,7 +202,10 @@
 .quick-review strong { color: var(--canopy); font-size: 0.7rem; letter-spacing: 0.06em; text-transform: uppercase; }
 
 /* ── Process ── */
-.process { background: var(--clr-bg); }
+.process {
+  padding-top: clamp(2rem, 4vw, 4rem);
+  background: var(--clr-bg);
+}
 .process-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--sp-2xl); counter-reset: process; }
 .process-steps li { position: relative; padding: var(--sp-xl); text-align: center; border-radius: var(--radius-lg); background: var(--white); border: 1px solid var(--gray-200); box-shadow: var(--shadow-sm); }
 .process-number { display: inline-grid; place-items: center; width: 48px; height: 48px; margin-bottom: var(--sp-lg); border-radius: 50%; background: var(--canopy); color: var(--white); font-family: var(--ff-heading); font-weight: var(--fw-bold); }
@@ -369,6 +341,7 @@
 
 /* ── Services Section ── */
 .services {
+  padding-bottom: clamp(2rem, 4vw, 4rem);
   background: var(--clr-bg);
 }
 
@@ -856,10 +829,6 @@
     text-align: center;
   }
 
-  .hero-actions {
-    flex-direction: column;
-  }
-
   .trust-bar .container {
     gap: var(--sp-xl);
   }
@@ -905,10 +874,6 @@
 
   .hero-content {
     padding-block: var(--sp-4xl) var(--sp-3xl);
-  }
-
-  .hero-actions .btn {
-    width: min(100%, 22rem);
   }
 
   .quick-reviews {
