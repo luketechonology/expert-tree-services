@@ -284,10 +284,11 @@
     document.body.insertAdjacentHTML('beforeend', `
       <!-- Chatbot FAB -->
       <button class="chat-fab" id="chat-fab" aria-label="Open chat assistant" aria-expanded="false" aria-controls="chat-window">
-        <span class="chat-fab-label" aria-hidden="true">Chat with Us</span>
-        <svg class="icon-chat" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+        <svg class="icon-chat" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="currentColor" aria-hidden="true">
+          <path d="M19.2 8C9.7 8 2 14.1 2 21.7c0 4.6 2.9 8.8 7.7 11.3l-1.5 6.1 7-4.1c1.3.2 2.7.4 4 .4 9.5 0 17.2-6.1 17.2-13.7S28.7 8 19.2 8Z"/>
+          <path d="M38.7 23.2c-.7 8.3-8.8 14.8-18.9 15l.1.1c3 2.1 7 3.4 11.3 3.4 1.3 0 2.6-.1 3.8-.4l6.5 3.8-1.4-5.7c3.8-2.1 6.1-5.4 6.1-9 0-3.1-1.7-5.9-4.6-8-.9.4-1.9.6-2.9.8Z"/>
         </svg>
+        <span class="chat-fab-label">Chat with Us</span>
         <svg class="icon-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <line x1="18" y1="6" x2="6" y2="18"/>
           <line x1="6" y1="6" x2="18" y2="18"/>
@@ -391,6 +392,7 @@
     isOpen = true;
     fab.classList.add('open');
     window_.classList.add('open');
+    fab.setAttribute('aria-label', 'Close chat assistant');
     fab.setAttribute('aria-expanded', 'true');
     window_.setAttribute('aria-hidden', 'false');
 
@@ -406,6 +408,7 @@
     isOpen = false;
     fab.classList.remove('open');
     window_.classList.remove('open');
+    fab.setAttribute('aria-label', 'Open chat assistant');
     fab.setAttribute('aria-expanded', 'false');
     window_.setAttribute('aria-hidden', 'true');
     fab.focus();
